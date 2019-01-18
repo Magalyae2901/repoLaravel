@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/ticket', ['as'=>'home', 'uses' => 'PagesController@index']);
