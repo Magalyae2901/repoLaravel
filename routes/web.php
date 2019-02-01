@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/ticket', ['as'=>'home', 'uses' => 'PagesController@index']);
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
